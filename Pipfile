@@ -10,6 +10,7 @@ verify_ssl = true
 django = "*"
 mysqlclient = "*"
 django-cors-headers = "*"
+tornado = "*"
 
 [requires]
 python_version = "3.6"
