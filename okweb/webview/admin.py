@@ -1,7 +1,12 @@
 from django.contrib import admin
 
 from .models import Website
+from .models import Category
 
 # Register your models here.
 
-admin.site.register(Website)
+models = (
+    Website,
+    Category,
+)
+admin.site.register(models)
