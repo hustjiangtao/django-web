@@ -25,7 +25,7 @@
                 <br />
                 <p>
                   某些工具或者现成的网站虽然也能满足自己的部分需求，但是可定制性又不强，
-                  自己刚好翻到一个设计师 Designer. Viggo.
+                  自己刚好翻到一个设计师 <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"> Designer. Viggo. </a>
                   写的设计师导航网站，感觉和自己的设想、思路都比较契合，
                   经过三天的改造，于是就有了本站。
                 </p>
