@@ -9,6 +9,8 @@
       <div class="footer-text">
         &copy; {{ new Date().getFullYear() }}
         <a href="#about"><strong>WebStack</strong></a> build by <a href="https://www.hujiangtao.cn" target="_blank"><strong>木先生</strong></a>
+        &emsp;
+        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="../../assets/images/upyun_logo.svg" alt="upyun" height="20" /></a>
       </div>
       <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
       <div class="go-up">
