@@ -53,8 +53,8 @@ def index(request):
                     'logo': x.website_logo,
                     'desc': x.website_desc,
                     'create_time': x.website_create_time,
-                } for x in websites if x.website_category == category.id],
-            } for category in categorys
+                } for x in websites if x and x.website_category == category.id],
+            } for category in categorys if category
         ]
     }
     return JsonResponse(data=result)
