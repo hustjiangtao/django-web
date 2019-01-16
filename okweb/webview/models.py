@@ -1,5 +1,7 @@
 from django.db import models
 
+from .utils.upyun_storage import UpyunStorage
+
 # Create your models here.
 
 
@@ -29,3 +31,12 @@ class Category(models.Model):
 
     def __str__(self):
         return f"{self.id}. {self.name}"
+
+
+class StaticFile(models.Model):
+    name = models.CharField(max_length=40)
+    url = models.FileField(upload_to="static/%Y/%m/%d/", storage=UpyunStorage())
+    create_time = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.id}. {self.name}: {self.url}"
