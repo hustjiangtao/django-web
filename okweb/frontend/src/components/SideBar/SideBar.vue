@@ -5,10 +5,12 @@
         <!-- logo -->
         <div class="logo">
           <a href="/" class="logo-expanded">
-            <img src="../../assets/images/logo@2x.png" width="100%" alt="" />
+            <!--<img src="../../assets/images/logo@2x.png" width="100%" alt="" />-->
+            <img src="https://static.hujiangtao.cn/static/2019/01/16/webcc-logo-001.png" width="100%" alt="" />
           </a>
           <a href="/" class="logo-collapsed">
-            <img src="../../assets/images/logo-collapsed@2x.png" width="40" alt="" />
+            <!--<img src="../../assets/images/logo-collapsed@2x.png" width="40" alt="" />-->
+            <img src="https://static.hujiangtao.cn/static/2019/01/16/webcc-collapsed-001.png" width="40" alt="" />
           </a>
         </div>
         <div class="mobile-menu-toggle visible-xs">
