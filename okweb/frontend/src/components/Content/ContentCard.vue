@@ -8,7 +8,7 @@
   >
     <div class="xe-comment-entry">
       <a class="xe-user-img">
-        <img :src="site.logo" class="img-circle" width="40">
+        <img :src="site.logo" class="img-circle" width="40" height="40" alt="site_logo">
         <!--<img :src="site.logo" class="img-circle" width="16">-->
       </a>
       <span class="label label-info" data-toggle="tooltip" data-placement="left" title="" data-original-title="Hello I am a Tooltip"></span>

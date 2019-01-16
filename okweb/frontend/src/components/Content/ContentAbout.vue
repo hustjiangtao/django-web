@@ -25,13 +25,14 @@
                 <br />
                 <p>
                   某些工具或者现成的网站虽然也能满足自己的部分需求，但是可定制性又不强，
-                  自己刚好翻到一个设计师 <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"> Designer. Viggo. </a>
+                  <!--自己刚好翻到一个设计师 <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"> Designer. Viggo. </a>-->
+                  自己刚好翻到一个设计师<i> Designer. Viggo. </i>
                   写的设计师导航网站，感觉和自己的设想、思路都比较契合，
                   经过三天的改造，于是就有了本站。
                 </p>
                 <br />
                 <p>
-                  如果你对本站有任何的疑问或者建议，欢迎随时邮件与我交流：<a href="mailto:jiangtao.work@gmail.com"><img src="../../assets/images/logos/baseline-email-24px.svg" width="24" alt="email"></a>
+                  如果你对本站有任何的疑问或者建议，欢迎随时邮件与我交流：<a href="mailto:jiangtao.work@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                 </p>
               </blockquote>
             </div>
@@ -83,7 +84,7 @@ export default {
       site: {
         name: "木先生",
         url: "https://www.hujiangtao.cn/",
-        logo: require("../../assets/images/logos/hujiangtao_logo.jpg"),
+        logo: "https://static.hujiangtao.cn/static/2019/01/16/mu_320x320.jpg",
         desc: "Full-time UI designer with an enduring interest in Coding."
       }
     };
