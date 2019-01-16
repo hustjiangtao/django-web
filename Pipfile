@@ -12,6 +12,7 @@ mysqlclient = "*"
 django-cors-headers = "*"
 tornado = "*"
 upyun = "*"
+tinify = "*"
 
 [requires]
 python_version = "3.6"

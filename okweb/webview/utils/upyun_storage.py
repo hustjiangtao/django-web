@@ -7,6 +7,8 @@ import upyun
 from django.core.files.storage import Storage
 from django.utils.deconstruct import deconstructible
 
+from .do_tinyfy import buffer_tinyfy
+
 
 @deconstructible
 class UpyunStorage(Storage):
@@ -21,7 +23,11 @@ class UpyunStorage(Storage):
         # name here is "static/%Y/%m/%d/" (MEDIA_ROOT + upload_to)
         full_url = self.BASE_URL + name
         try:
-            res = self.up.put(name, content.read())
+            file = content.read()
+            # tinyfy by tinypng, only .png & .jpg files
+            if content.content_type in ("image/png", "image/jpeg"):
+                file = buffer_tinyfy(source_data=file)
+            res = self.up.put(name, file)
         except Exception as e:
             raise
         return full_url

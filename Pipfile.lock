@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3f712d81d5b2edf6bd58b531f2429a881e1fde68d8fccee9272921799e2f364b"
+            "sha256": "fa331c50003a7dca7acf9a76b8f7276b215be490ec35088ba3ccf607711bbb79"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -75,6 +75,13 @@
                 "sha256:7bf2a778576d825600030a110f3c0e3e8edc51dfaafe1c146e39a2027784957b"
             ],
             "version": "==2.21.0"
+        },
+        "tinify": {
+            "hashes": [
+                "sha256:f3d303fede8c526b913df6b65fd0223c6805a2ed352a307df9e024ef770c23c3"
+            ],
+            "index": "pypi",
+            "version": "==1.5.1"
         },
         "tornado": {
             "hashes": [
