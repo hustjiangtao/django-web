@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 from django.views.decorators.http import require_http_methods
 from django.http import JsonResponse
 
@@ -16,10 +18,10 @@ def add_website(request):
 def index(request):
     categorys = Category.objects.filter()
     websites = Website.objects.filter()
-    group_websites = [
-        {
-            'name': category.name,
-            'sites': [{
+    websites_dict = defaultdict(list)
+    for x in websites:
+        if x:
+            websites_dict[x.website_category].append({
                 'name': x.website_name,
                 'url': x.website_url,
                 # 'logo': f"http://favicon.byi.pw/?url={x.website_url}",
@@ -27,7 +29,11 @@ def index(request):
                 'logo': x.website_logo,
                 'desc': x.website_desc,
                 'create_time': x.website_create_time,
-            } for x in websites if x and x.website_category == category.id],
+            })
+    group_websites = [
+        {
+            'name': category.name,
+            'sites': websites_dict.get(category.id),
         } for category in categorys if category
     ]
     filter_group_websites = [x for x in group_websites if x.get('sites')]
