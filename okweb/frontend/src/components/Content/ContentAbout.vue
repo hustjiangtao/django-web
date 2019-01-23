@@ -28,8 +28,16 @@
                   <!--自己刚好翻到一个设计师 <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"> Designer. Viggo. </a>-->
                   自己刚好翻到一个设计师<i> Designer. Viggo. </i>
                   写的设计师导航网站，感觉和自己的设想、思路都比较契合，
-                  经过三天的改造，于是就有了本站。
+                  经过改造，于是就有了本站。
                 </p>
+                <br />
+                <p>后面预期会添加一些常用实用功能，包括但不限于：</p>
+                <p>&emsp;&emsp;1.站内全文检索</p>
+                <p>&emsp;&emsp;2.站外常用搜索</p>
+                <p>&emsp;&emsp;3.精品推荐提交</p>
+                <p>&emsp;&emsp;4.个性化样式定制</p>
+                <p>&emsp;&emsp;5.实用教程分享</p>
+                <p>&emsp;&emsp;6.站内互动</p>
                 <br />
                 <p>
                   如果你对本站有任何的疑问或者建议，欢迎随时邮件与我交流：<a href="mailto:jiangtao.work@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -85,7 +93,7 @@ export default {
         name: "木先生",
         url: "https://www.hujiangtao.cn/",
         logo: "https://static.hujiangtao.cn/static/2019/01/16/mu_320x320.jpg",
-        desc: "Full-time UI designer with an enduring interest in Coding."
+        desc: "Full-time Python Programmer."
       }
     };
   }
