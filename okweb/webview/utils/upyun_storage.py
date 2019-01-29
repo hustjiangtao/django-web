@@ -21,7 +21,9 @@ class UpyunStorage(Storage):
 
     def _save(self, name, content):
         # name here is "static/%Y/%m/%d/" (MEDIA_ROOT + upload_to)
-        full_url = self.BASE_URL + name
+        # save suffix url without static domain
+        # full_url = self.BASE_URL + name
+        suffix_url = '/' + name
         try:
             file = content.read()
             # tinyfy by tinypng, only .png & .jpg files
@@ -30,7 +32,8 @@ class UpyunStorage(Storage):
             res = self.up.put(name, file)
         except Exception as e:
             raise
-        return full_url
+        # return full_url
+        return suffix_url
 
     def exists(self, name):
         try:

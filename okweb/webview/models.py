@@ -16,7 +16,7 @@ def get_default_avatar(email, size=40):
 class Website(models.Model):
     website_name = models.CharField(max_length=64)
     website_url = models.URLField(max_length=255)
-    website_logo = models.URLField(max_length=255, default=get_default_avatar('jiangtao.work@gmail.com'))
+    website_logo = models.URLField(max_length=255)
     website_desc = models.CharField(max_length=255, blank=True)
     website_category = models.SmallIntegerField(db_index=True, default=0)
     website_create_time = models.DateTimeField(auto_now_add=True)
@@ -40,3 +40,7 @@ class StaticFile(models.Model):
 
     def __str__(self):
         return f"{self.id}. {self.name}: {self.url}"
+
+    def full_url(self):
+        from django.conf import settings
+        return settings.UPYUN["BASE_URL"] + self.url
