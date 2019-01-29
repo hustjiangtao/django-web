@@ -40,7 +40,3 @@ class StaticFile(models.Model):
 
     def __str__(self):
         return f"{self.id}. {self.name}: {self.url}"
-
-    def full_url(self):
-        from django.conf import settings
-        return settings.UPYUN["BASE_URL"] + self.url
