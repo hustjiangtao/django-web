@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "68c5b724ba063dc9d22e07df1261124ac5968c33f5c9ac013d4b4fcf4a85ca04"
+            "sha256": "ac539c76700051ec40ff3c3ba04d244c77df76bd87dfe76b56555553bff88306"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -53,6 +53,14 @@
             ],
             "version": "==2.8"
         },
+        "itchat": {
+            "hashes": [
+                "sha256:3bbff1b3755bc7cab1f80e568da8bf4720eb4430143d550225ce37a8d9d0a4cb",
+                "sha256:e54ad188853ced1173a96c8686201214a721c95bd3970e2d78fc7a23a552272c"
+            ],
+            "index": "pypi",
+            "version": "==1.3.10"
+        },
         "mysqlclient": {
             "hashes": [
                 "sha256:6883a4dd98903bad375c859ead1a480e1245ea3a8d9b038ea2c091c1865ba673",
@@ -61,6 +69,19 @@
             ],
             "index": "pypi",
             "version": "==1.4.1"
+        },
+        "pypng": {
+            "hashes": [
+                "sha256:3145d042947fa8121e6bd5a7e59149871bf8c13675c42371e12977499d7f3926"
+            ],
+            "version": "==0.0.19"
+        },
+        "pyqrcode": {
+            "hashes": [
+                "sha256:1b2812775fa6ff5c527977c4cd2ccb07051ca7d0bc0aecf937a43864abe5eff6",
+                "sha256:fdbf7634733e56b72e27f9bce46e4550b75a3a2c420414035cae9d9d26b234d5"
+            ],
+            "version": "==1.2.1"
         },
         "pytz": {
             "hashes": [

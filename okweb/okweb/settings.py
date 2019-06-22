@@ -139,3 +139,17 @@ CORS_ORIGIN_WHITELIST = (
     'localhost:8080',
     '127.0.0.1:8080',
 )
+
+
+# upyun
+UPYUN = {
+    "BUCKET_NAME": '<BUCKET_NAME>',
+    "USER_NAME": '<USER_NAME>',
+    "PASSWORD": '<PASSWORD>',
+    # "BASE_URL": 'https://static.hujiangtao.cn',
+    "BASE_URL": 'https://static.webppx.com',
+}
+
+
+# tinypng key
+TINYFY_KEY = '<TINYFY_KEY>'
