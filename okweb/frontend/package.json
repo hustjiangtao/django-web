@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "vue-cli-service build; scp -r ./dist tengxun:/home/jiangtao/django-web/okweb/frontend/dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
